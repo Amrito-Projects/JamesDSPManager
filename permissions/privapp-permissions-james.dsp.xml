@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<permissions>
+    <privapp-permissions package="james.dsp">
+        <permission name="android.permission.DUMP"/>
+    </privapp-permissions>
+</permissions>

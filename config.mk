@@ -15,7 +15,8 @@
 BUILD_PATH := packages/apps/JamesDSPManager
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(BUILD_PATH)/vendor,vendor)
+    $(call find-copy-subdir-files,*,$(BUILD_PATH)/vendor,vendor) \
+    $(BUILD_PATH)/permissions/privapp-permissions-james.dsp.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-james.dsp.xml
 
 PRODUCT_PACKAGES += \
     JamesDSPManager
